@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "2e9225e34664efd4",
+    "id": "a82e420f538c38ae",
     "type": "split",
     "children": [
       {
-        "id": "0571c1c94d829fac",
+        "id": "3a492e2b97a5ab5f",
         "type": "tabs",
         "children": [
           {
-            "id": "2d8837e6263008e3",
+            "id": "40204adf63c2ad9a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/Intune Lab.md",
+                "file": "source/content/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Intune Lab"
+              "title": "index"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1243752a4df710bb",
+    "id": "9e1940c66452ea52",
     "type": "split",
     "children": [
       {
-        "id": "8a4c81639dc8783e",
+        "id": "5a031c4ae6a45219",
         "type": "tabs",
         "children": [
           {
-            "id": "b77831b90dd9f87b",
+            "id": "8a34a68cc524d4e0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "0829eb50dbb8a2b3",
+            "id": "4651ec06878af301",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "436d75c49c949463",
+            "id": "89d8b0cbf8f017e4",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "ba1ec06a672fb227",
+    "id": "066f515ec2c0d9fe",
     "type": "split",
     "children": [
       {
-        "id": "6cea78168fbf9ccd",
+        "id": "eed8cf873fc64742",
         "type": "tabs",
         "children": [
           {
-            "id": "2aa5a4c073617928",
+            "id": "1f0deb42f8955a48",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intune Lab/Intune Lab.md",
+                "file": "source/content/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Intune Lab"
+              "title": "Backlinks for index"
             }
           },
           {
-            "id": "5acb7020384970a8",
+            "id": "e2ba20091ff887f3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intune Lab/Intune Lab.md",
+                "file": "source/content/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Intune Lab"
+              "title": "Outgoing links from index"
             }
           },
           {
-            "id": "f850ba7e9e699bea",
+            "id": "44c5dfd2f432cb8d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,18 +137,18 @@
             }
           },
           {
-            "id": "2d9129bb8dcf7983",
+            "id": "f2e64ab6aa39acad",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intune Lab/Intune Lab.md",
+                "file": "source/content/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intune Lab"
+              "title": "Outline of index"
             }
           }
         ]
@@ -160,23 +160,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Create new base": false
     }
   },
-  "active": "b77831b90dd9f87b",
-  "lastOpenFiles": [
-    "category-folder/Some note.md",
-    "Intune Lab/Intune Lab.md",
-    "Intune Lab",
-    "category-folder/index.md",
-    "index.md",
-    "category-folder"
-  ]
+  "active": "40204adf63c2ad9a",
+  "lastOpenFiles": []
 }
