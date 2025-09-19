@@ -2,4 +2,4 @@
 
 
 # Intune Lab
-[[Intune Lab]]
+[[Setting Up Intune]]

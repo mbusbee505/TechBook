@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/Intune Lab.md",
+                "file": "Intune Lab/Setting Up Intune.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Intune Lab"
+              "title": "Setting Up Intune"
             }
           }
         ]
@@ -172,9 +172,9 @@
   },
   "active": "2d8837e6263008e3",
   "lastOpenFiles": [
-    "Device-prep-policies.png",
-    "Intune Lab/Intune Lab.md",
-    "Untitled",
+    "assets/Device-prep-policies.png",
+    "Intune Lab/Setting Up Intune.md",
+    "assets",
     "index.md",
     "category-folder/Some note.md",
     "Intune Lab",
