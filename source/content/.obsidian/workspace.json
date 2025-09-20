@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/0. Project Intro.md",
+                "file": "Intune Lab/1. Setting Up Intune.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0. Project Intro"
+              "title": "1. Setting Up Intune"
             }
           },
           {
@@ -186,11 +186,14 @@
   },
   "active": "2d8837e6263008e3",
   "lastOpenFiles": [
+    "Intune Lab/attachments/2-1. Setting Up Intune.png",
+    "Intune Lab/1..md",
     "Intune Lab/1. Setting Up Intune.md",
-    "index.md",
-    "Intune Lab/0. Project Intro.md",
-    "1. Setting Up Intune.md",
+    "Intune Lab/attachments/1-1. Setting Up Intune.png",
     "Intune Lab/attachments/1-Setting Up Intune.png",
+    "Intune Lab/0. Project Intro.md",
+    "index.md",
+    "1. Setting Up Intune.md",
     "Intune Lab/attachments/Pasted image 20250919163451.png",
     "Intune Lab/attachments",
     "Pasted image 20250919163351.png",
@@ -200,7 +203,6 @@
     "Pasted image 20250919163315.png",
     "Pasted image 20250919163126.png",
     "images/1-Setting Up Intune.png",
-    "Pasted image 20250919163050.png",
     "images",
     "images",
     "category-folder/Some note.md",
