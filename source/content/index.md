@@ -1,5 +1,9 @@
-# Table of Contents
 
-
+This is where I document my lab setups and other things. 
 # Intune Lab
-[[Setting Up Intune]]
+- [[0. Project Intro]]
+- [[1. Setting Up Intune]]
+
+
+
+
