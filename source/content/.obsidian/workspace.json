@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/2. Enrolling Devices.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Enrolling Devices"
+              "title": "index"
             }
           },
           {
@@ -201,11 +201,12 @@
   },
   "active": "7ad4dc7080fe6b61",
   "lastOpenFiles": [
+    "Intune Lab/0. Project Intro.md",
+    "index.md",
+    "Intune Lab/2. Enrolling Devices.md",
     "Intune Lab/attachments/2. Enrolling Devices-2.png",
     "Intune Lab/attachments/2. Enrolling Devices-1.png",
     "Intune Lab/1. Setting Up Intune.md",
-    "Intune Lab/2. Enrolling Devices.md",
-    "index.md",
     "Setting Up Intune.md",
     "Enrolling Devices.md",
     "Intune Lab/attachments/1. Setting Up Intune-10.png",
@@ -216,8 +217,6 @@
     "Intune Lab/attachments/1. Setting Up Intune-8.png",
     "Intune Lab/attachments/1. Setting Up Intune-8.png",
     "Intune Lab/attachments/1. Setting Up Intune-6.png",
-    "Intune Lab/attachments/1. Setting Up Intune-5.png",
-    "Intune Lab/0. Project Intro.md",
     "Intune Lab/1..md",
     "1. Setting Up Intune.md",
     "Intune Lab/attachments",
