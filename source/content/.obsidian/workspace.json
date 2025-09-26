@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/6. Securing Devices.md",
+                "file": "Intune Lab/0. Project Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6. Securing Devices"
+              "title": "0. Project Introduction"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intune Lab/6. Securing Devices.md",
+                "file": "Intune Lab/0. Project Introduction.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 6. Securing Devices"
+              "title": "Backlinks for 0. Project Introduction"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intune Lab/6. Securing Devices.md",
+                "file": "Intune Lab/0. Project Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 6. Securing Devices"
+              "title": "Outgoing links from 0. Project Introduction"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intune Lab/6. Securing Devices.md",
+                "file": "Intune Lab/0. Project Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 6. Securing Devices"
+              "title": "Outline of 0. Project Introduction"
             }
           }
         ],
@@ -187,14 +187,14 @@
   },
   "active": "e27a99a31728c60f",
   "lastOpenFiles": [
-    "Intune Lab/5. Creating Update Rings.md",
-    "Intune Lab/4. Installing Apps.md",
-    "Intune Lab/3. Polishing OOBE.md",
-    "Intune Lab/2. Enrolling Devices.md",
     "Intune Lab/1. Setting Up Intune.md",
+    "Intune Lab/2. Enrolling Devices.md",
+    "Intune Lab/3. Polishing OOBE.md",
+    "Intune Lab/4. Installing Apps.md",
+    "Intune Lab/5. Creating Update Rings.md",
+    "Intune Lab/6. Securing Devices.md",
     "Intune Lab/0. Project Introduction.md",
     "index.md",
-    "Intune Lab/6. Securing Devices.md",
     "Intune Lab/attachments/6. Securing Devices-2.png",
     "Intune Lab/attachments/6. Securing Devices-1.png",
     "Intune Lab/attachments/5. Creating Update Rings-3.png",
