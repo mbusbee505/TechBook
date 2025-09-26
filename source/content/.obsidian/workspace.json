@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -201,6 +202,7 @@
   },
   "active": "1605266416e735d3",
   "lastOpenFiles": [
+    "Home.md",
     "Intune Lab/attachments/4. Installing Apps-7.png",
     "Intune Lab/attachments/4. Installing Apps-6.png",
     "Intune Lab/3. Polishing OOBE Setup.md",
@@ -218,7 +220,6 @@
     "Intune Lab/attachments/4. Installing Apps-1.png",
     "Intune Lab/attachments/3. Polishing Autopilot OOBE-5.png",
     "Intune Lab/attachments/3. Polishing Autopilot OOBE-4.png",
-    "Intune Lab/attachments/3. Polishing Autopilot OOBE-3.png",
     "Setting Up Intune.md",
     "Enrolling Devices.md",
     "Intune Lab/1..md",
