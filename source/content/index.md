@@ -20,6 +20,8 @@ In theory, an IT team could then ship a brand new laptop straight to a newly hir
 - ### [[2. Enrolling Devices]]
 - ### [[3. Polishing OOBE]]
 - ### [[4. Installing Apps]]
+- ### [[5. Creating Update Rings]]
+
 
 
 

@@ -8,21 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2d8837e6263008e3",
+            "id": "1605266416e735d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/3. Polishing OOBE.md",
+                "file": "Intune Lab/6. Securing Devices.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Polishing OOBE"
+              "title": "6. Securing Devices"
             }
           },
           {
-            "id": "1605266416e735d3",
+            "id": "e27a99a31728c60f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,20 +33,6 @@
               },
               "icon": "lucide-file",
               "title": "0. Project Introduction"
-            }
-          },
-          {
-            "id": "4a416dff352175b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
             }
           }
         ],
@@ -123,9 +109,9 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "Intune Lab/0. Project Introduction.md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -133,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for 0. Project Introduction"
             }
           },
           {
@@ -142,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Intune Lab/0. Project Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from index"
+              "title": "Outgoing links from 0. Project Introduction"
             }
           },
           {
@@ -171,21 +157,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "Intune Lab/0. Project Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of 0. Project Introduction"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,18 +185,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1605266416e735d3",
+  "active": "e27a99a31728c60f",
   "lastOpenFiles": [
-    "Intune Lab/3. Polishing OOBE.md",
+    "Intune Lab/6. Securing Devices.md",
+    "Intune Lab/attachments/6. Securing Devices-1.png",
+    "Intune Lab/5. Creating Update Rings.md",
+    "index.md",
     "Intune Lab/0. Project Introduction.md",
+    "Intune Lab/3. Polishing OOBE.md",
     "Intune Lab/2. Enrolling Devices.md",
     "Intune Lab/1. Setting Up Intune.md",
-    "Intune Lab/5. Creating Update Rings.md",
     "Intune Lab/attachments/5. Creating Update Rings-3.png",
     "Intune Lab/attachments/5. Creating Update Rings-2.png",
     "Intune Lab/attachments/5. Creating Update Rings-1.png",
     "Intune Lab/4. Installing Apps.md",
-    "index.md",
     "Home.md",
     "Intune Lab/attachments/4. Installing Apps-7.png",
     "Intune Lab/attachments/4. Installing Apps-6.png",
@@ -218,7 +206,6 @@
     "Intune Lab/attachments/4. Installing Apps-5.png",
     "Intune Lab/attachments/4. Installing Apps-4.png",
     "Intune Lab/attachments/4. Installing Apps-3.png",
-    "Intune Lab/attachments/4. Installing Apps-2.png",
     "Intune Lab/attachments/4. Installing Apps-2.png",
     "Setting Up Intune.md",
     "Enrolling Devices.md",
