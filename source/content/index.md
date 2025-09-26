@@ -8,8 +8,8 @@ title: "Home"
 This is where I document my Lab Setups and other How-To's. Hopefully you find something here useful. 
 
 ---
-
-# Intune Lab
+# Table of Contents
+## Intune Lab
 
 - ### [[0. Project Introduction]]
 - ### [[1. Setting Up Intune]]
