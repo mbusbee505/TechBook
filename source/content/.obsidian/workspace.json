@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/4. Installing Apps.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Installing Apps"
+              "title": "index"
             }
           },
           {
@@ -202,13 +202,13 @@
   },
   "active": "1605266416e735d3",
   "lastOpenFiles": [
+    "Intune Lab/4. Installing Apps.md",
     "index.md",
     "Home.md",
     "Intune Lab/attachments/4. Installing Apps-7.png",
     "Intune Lab/attachments/4. Installing Apps-6.png",
     "Intune Lab/3. Polishing OOBE Setup.md",
     "Intune Lab/().md",
-    "Intune Lab/4. Installing Apps.md",
     "Intune Lab/2. Enrolling Devices.md",
     "Intune Lab/1. Setting Up Intune.md",
     "Intune Lab/0. Project Introduction.md",

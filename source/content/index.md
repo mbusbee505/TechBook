@@ -3,7 +3,12 @@
 title: "Home"
 ---
 
-This is where I document my lab setups and other things.
+# BusbeeTech
+
+This is where I document my Lab Setups and other How-To's. Hopefully you find something here useful. 
+
+---
+
 # Intune Lab
 
 - ### [[0. Project Introduction]]
