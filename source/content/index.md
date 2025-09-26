@@ -1,5 +1,9 @@
 
-This is where I document my lab setups and other things. 
+---
+title: "Home"
+---
+
+This is where I document my lab setups and other things.
 # Intune Lab
 
 - ### [[0. Project Introduction]]
