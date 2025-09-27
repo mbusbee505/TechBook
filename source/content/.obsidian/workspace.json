@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/0. Project Introduction.md",
+                "file": "M365X-Lab/0. Project Introduction.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/1. Setting Up The Lab.md",
+                "file": "M365X-Lab/0. Project Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Setting Up The Lab"
+              "title": "0. Project Introduction"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intune Lab/1. Setting Up The Lab.md",
+                "file": "M365X-Lab/0. Project Introduction.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 1. Setting Up The Lab"
+              "title": "Backlinks for 0. Project Introduction"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intune Lab/1. Setting Up The Lab.md",
+                "file": "M365X-Lab/0. Project Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 1. Setting Up The Lab"
+              "title": "Outgoing links from 0. Project Introduction"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intune Lab/1. Setting Up The Lab.md",
+                "file": "M365X-Lab/0. Project Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 1. Setting Up The Lab"
+              "title": "Outline of 0. Project Introduction"
             }
           }
         ],
@@ -185,37 +185,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ddd7fb16f4af2a9c",
+  "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
-    "Intune Lab/0. Project Introduction.md",
-    "Intune Lab/1. Setting Up The Lab.md",
+    "Untitled/Untitled",
+    "Untitled",
+    "M365X-Lab/1. Setting Up The Lab.md",
+    "M365X-Lab/0. Project Introduction.md",
     "index.md",
-    "Intune Lab/6. Securing Devices.md",
-    "Intune Lab/attachments/1. Setting Up Intune-12.png",
-    "Intune Lab/5. Creating Update Rings.md",
-    "Intune Lab/2. Enrolling Devices.md",
-    "Intune Lab/3. Polishing OOBE.md",
-    "Intune Lab/4. Installing Apps.md",
-    "Intune Lab/attachments/6. Securing Devices-1.png",
-    "Intune Lab/attachments/5. Creating Update Rings-3.png",
-    "Intune Lab/attachments/5. Creating Update Rings-2.png",
-    "Intune Lab/attachments/5. Creating Update Rings-1.png",
+    "M365X-Lab/6. Securing Devices.md",
+    "M365X-Lab/attachments/1. Setting Up Intune-12.png",
+    "M365X-Lab/5. Creating Update Rings.md",
+    "M365X-Lab/2. Enrolling Devices.md",
+    "M365X-Lab/3. Polishing OOBE.md",
+    "M365X-Lab/4. Installing Apps.md",
+    "M365X-Lab/attachments/6. Securing Devices-1.png",
+    "M365X-Lab/attachments/5. Creating Update Rings-3.png",
+    "M365X-Lab/attachments/5. Creating Update Rings-2.png",
+    "M365X-Lab/attachments/5. Creating Update Rings-1.png",
     "Home.md",
-    "Intune Lab/attachments/4. Installing Apps-7.png",
-    "Intune Lab/attachments/4. Installing Apps-6.png",
+    "M365X-Lab/attachments/4. Installing Apps-7.png",
+    "M365X-Lab/attachments/4. Installing Apps-6.png",
     "Intune Lab/().md",
-    "Intune Lab/attachments/4. Installing Apps-5.png",
-    "Intune Lab/attachments/4. Installing Apps-4.png",
-    "Intune Lab/attachments/4. Installing Apps-3.png",
+    "M365X-Lab/attachments/4. Installing Apps-5.png",
+    "M365X-Lab/attachments/4. Installing Apps-4.png",
+    "M365X-Lab/attachments/4. Installing Apps-3.png",
     "Setting Up Intune.md",
     "Enrolling Devices.md",
     "Intune Lab/1..md",
     "1. Setting Up Intune.md",
-    "Intune Lab/attachments",
+    "M365X-Lab/attachments",
     "images",
     "images",
     "category-folder/Some note.md",
-    "Intune Lab",
+    "M365X-Lab",
     "category-folder/index.md",
     "category-folder"
   ]
