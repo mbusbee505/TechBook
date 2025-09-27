@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "M365X-Lab/1. Setting Up The Lab.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "1. Setting Up The Lab"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "M365X-Lab/1. Setting Up The Lab.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for 1. Setting Up The Lab"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "M365X-Lab/1. Setting Up The Lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from index"
+              "title": "Outgoing links from 1. Setting Up The Lab"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "M365X-Lab/1. Setting Up The Lab.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of 1. Setting Up The Lab"
             }
           }
         ],
@@ -185,13 +185,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ddd7fb16f4af2a9c",
+  "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
+    "Unpublished",
+    "index.md",
     "M365X-Lab/0. Project Introduction.md",
     "Untitled/Untitled",
-    "Untitled",
     "M365X-Lab/1. Setting Up The Lab.md",
-    "index.md",
     "M365X-Lab/6. Securing Devices.md",
     "M365X-Lab/attachments/1. Setting Up Intune-12.png",
     "M365X-Lab/5. Creating Update Rings.md",
