@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "M365X-Lab/0. Project Introduction.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0. Project Introduction"
+              "title": "index"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "M365X-Lab/0. Project Introduction.md",
+                "file": "index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 0. Project Introduction"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "M365X-Lab/0. Project Introduction.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 0. Project Introduction"
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "M365X-Lab/0. Project Introduction.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0. Project Introduction"
+              "title": "Outline of index"
             }
           }
         ],
@@ -185,12 +185,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b77831b90dd9f87b",
+  "active": "ddd7fb16f4af2a9c",
   "lastOpenFiles": [
+    "M365X-Lab/0. Project Introduction.md",
     "Untitled/Untitled",
     "Untitled",
     "M365X-Lab/1. Setting Up The Lab.md",
-    "M365X-Lab/0. Project Introduction.md",
     "index.md",
     "M365X-Lab/6. Securing Devices.md",
     "M365X-Lab/attachments/1. Setting Up Intune-12.png",

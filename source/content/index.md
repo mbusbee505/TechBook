@@ -12,7 +12,7 @@ In theory, an IT team could then ship a brand new laptop straight to a newly hir
 
 ---
 # Table of Contents
-## Intune Lab
+## M365X-Lab
 
 - ### [[0. Project Introduction]]
 - ### [[1. Setting Up The Lab]]
