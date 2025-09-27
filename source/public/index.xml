@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>BusbeeTech 🐝</title>
+      <link>https://busbeetech.com</link>
+      <description>Last 10 notes on BusbeeTech 🐝</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>6. Securing Devices</title>
+    <link>https://busbeetech.com/Intune-Lab/6.-Securing-Devices</link>
+    <guid>https://busbeetech.com/Intune-Lab/6.-Securing-Devices</guid>
+    <description>Introduction to Security One benefit of managing devices with Intune is that it gives you control of security features across the devices it manages and allows IT admins the ability ...</description>
+    <pubDate>Fri, 26 Sep 2025 19:56:59 GMT</pubDate>
+  </item><item>
+    <title>5. Creating Update Rings</title>
+    <link>https://busbeetech.com/Intune-Lab/5.-Creating-Update-Rings</link>
+    <guid>https://busbeetech.com/Intune-Lab/5.-Creating-Update-Rings</guid>
+    <description>What is an Update Ring? An Update Ring is a policy setting within Intune that controls how and when the connected devices are able to run Windows updates ...</description>
+    <pubDate>Fri, 26 Sep 2025 17:09:37 GMT</pubDate>
+  </item><item>
+    <title>🏡 Home</title>
+    <link>https://busbeetech.com/</link>
+    <guid>https://busbeetech.com/</guid>
+    <description>BusbeeTech This is where I document my Lab Setups and other How-To’s. Hopefully you find something here useful. Currently I’m working on a Microsoft Intune lab to test deployment configurations of Windows 11 machines.</description>
+    <pubDate>Fri, 26 Sep 2025 14:46:34 GMT</pubDate>
+  </item><item>
+    <title>4. Installing Apps</title>
+    <link>https://busbeetech.com/Intune-Lab/4.-Installing-Apps</link>
+    <guid>https://busbeetech.com/Intune-Lab/4.-Installing-Apps</guid>
+    <description>Installation Methods I wanted to test a few commonly used apps that also showcase the different methods of installing apps with Intune. I decided on the following: Line-of-business (LOB) - Zoom Workplace Win32 App - Google Chrome Microsoft Store app - GlobalProtect VPN Microsoft 365 Apps for Windows 11 I will also need to make sure my Enrollment Status Page settings block the user from accessing the device until the installations are complete.</description>
+    <pubDate>Thu, 25 Sep 2025 17:40:02 GMT</pubDate>
+  </item><item>
+    <title>3. Polishing OOBE</title>
+    <link>https://busbeetech.com/Intune-Lab/3.-Polishing-OOBE</link>
+    <guid>https://busbeetech.com/Intune-Lab/3.-Polishing-OOBE</guid>
+    <description>Removing Windows Hello When I ran my first OOBE test my user was prompted with the requirement to setup Windows Hello. I want to turn this off entirely so I found going to Intune &gt; Devices &gt; Enrollment &gt; Windows Hello for Business and set Configure Windows Hello for Business to Disabled and clicked Save.</description>
+    <pubDate>Tue, 23 Sep 2025 17:43:42 GMT</pubDate>
+  </item><item>
+    <title>2. Enrolling Devices</title>
+    <link>https://busbeetech.com/Intune-Lab/2.-Enrolling-Devices</link>
+    <guid>https://busbeetech.com/Intune-Lab/2.-Enrolling-Devices</guid>
+    <description>Getting the Hardware Hash In a real world scenario hardware hashes for each device would be provided to the organization by the device manufacturer, but since I can’t do that I had to ...</description>
+    <pubDate>Sat, 20 Sep 2025 23:33:58 GMT</pubDate>
+  </item><item>
+    <title>0. Project Introduction</title>
+    <link>https://busbeetech.com/Intune-Lab/0.-Project-Introduction</link>
+    <guid>https://busbeetech.com/Intune-Lab/0.-Project-Introduction</guid>
+    <description>About The Project The idea for this project was to give myself more hands on experience using Intune, Autopilot, EntraID, and other associated technologies in the Microsoft Azure ...</description>
+    <pubDate>Sat, 20 Sep 2025 15:21:59 GMT</pubDate>
+  </item><item>
+    <title>1. Setting Up The Lab</title>
+    <link>https://busbeetech.com/Intune-Lab/1.-Setting-Up-The-Lab</link>
+    <guid>https://busbeetech.com/Intune-Lab/1.-Setting-Up-The-Lab</guid>
+    <description>Signing Up for Intune First things first, I had to sign up for the Intune Free Trial, provided an email address and a few other pieces of info. The trial allows for 25 users but we get all the same features as the paid version of the environment.</description>
+    <pubDate>Fri, 19 Sep 2025 17:58:45 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

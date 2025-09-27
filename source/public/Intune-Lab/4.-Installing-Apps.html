@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>4. Installing Apps</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains Mono&amp;family=JetBrains Mono:wght@400;700&amp;family=JetBrains Mono:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="4. Installing Apps"/><meta property="og:description" content="Installation Methods I wanted to test a few commonly used apps that also showcase the different methods of installing apps with Intune. I decided on the following: Line-of-business (LOB) - Zoom Workplace Win32 App - Google Chrome Microsoft Store app - GlobalProtect VPN Microsoft 365 Apps for Windows 11 I will also need to make sure my Enrollment Status Page settings block the user from accessing the device until the installations are complete."/><meta property="og:image" content="https://busbeetech.com/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/favicon.ico"/><link rel="shortcut icon" href="../static/favicon.ico"/><meta name="description" content="Installation Methods I wanted to test a few commonly used apps that also showcase the different methods of installing apps with Intune. I decided on the following: Line-of-business (LOB) - Zoom Workplace Win32 App - Google Chrome Microsoft Store app - GlobalProtect VPN Microsoft 365 Apps for Windows 11 I will also need to make sure my Enrollment Status Page settings block the user from accessing the device until the installations are complete."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="Intune-Lab/4.-Installing-Apps"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">BusbeeTech 🐝</a></h2><div class="spacer mobile-only"></div><div class="search"><button class="search-button" id="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><button class="darkmode" id="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;Intune-Lab&quot;,&quot;collapsed&quot;:true}]" aria-controls="explorer-content" aria-expanded="false"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Intune-Lab"><button class="folder-button"><span class="folder-title">Intune Lab</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Intune-Lab"><li><a href="../Intune-Lab/0.-Project-Introduction" data-for="Intune-Lab/0.-Project-Introduction">0. Project Introduction</a></li><li><a href="../Intune-Lab/1.-Setting-Up-The-Lab" data-for="Intune-Lab/1.-Setting-Up-The-Lab">1. Setting Up The Lab</a></li><li><a href="../Intune-Lab/2.-Enrolling-Devices" data-for="Intune-Lab/2.-Enrolling-Devices">2. Enrolling Devices</a></li><li><a href="../Intune-Lab/3.-Polishing-OOBE" data-for="Intune-Lab/3.-Polishing-OOBE">3. Polishing OOBE</a></li><li><a href="../Intune-Lab/4.-Installing-Apps" data-for="Intune-Lab/4.-Installing-Apps">4. Installing Apps</a></li><li><a href="../Intune-Lab/5.-Creating-Update-Rings" data-for="Intune-Lab/5.-Creating-Update-Rings">5. Creating Update Rings</a></li><li><a href="../Intune-Lab/6.-Securing-Devices" data-for="Intune-Lab/6.-Securing-Devices">6. Securing Devices</a></li></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Intune-Lab/">Intune Lab</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>4. Installing Apps</a></div></nav><h1 class="article-title">4. Installing Apps</h1><p show-comma="true" class="content-meta"><span>Sep 25, 2025</span><span>7 min read</span></p></div></div><article class="popover-hint"><h1 id="installation-methods">Installation Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#installation-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>I wanted to test a few commonly used apps that also showcase the different methods of installing apps with Intune. I decided on the following:</p>
+<ul>
+<li>Line-of-business (LOB) - Zoom Workplace</li>
+<li>Win32 App - Google Chrome</li>
+<li>Microsoft Store app - GlobalProtect VPN</li>
+<li>Microsoft 365 Apps for Windows 11</li>
+</ul>
+<p>I will also need to make sure my <a href="../Intune-Lab/2.-Enrolling-Devices#creating-an-enrollment-status-page-esp" class="internal alias" data-slug="Intune-Lab/2.-Enrolling-Devices">Enrollment Status Page</a> settings block the user from accessing the device until the installations are complete.</p>
+<h1 id="line-of-business-lob---zoom-workplace">Line-of-business (LOB) - Zoom Workplace<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#line-of-business-lob---zoom-workplace" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>To create a LOB app you basically just need to find the .msi version of the app’s installer and load it into Intune. Just go to <code>Intune > Apps > All apps > Create > App type > Line-of-business app</code>.</p>
+<p><img src="../Intune-Lab/attachments/4.-Installing-Apps-1.png" width="auto" height="auto" alt/></p>
+<p>Next it will ask to upload the file you can select it from your computer locally after downloading it from the internet or wherever else.</p>
+<p><img src="../Intune-Lab/attachments/4.-Installing-Apps-2.png" width="auto" height="auto" alt/></p>
+<p>In my case I went to <a href="https://zoom.us/download/admin" class="external" target="_blank">Zoom’s Downloads for IT Admins<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, selected the Download (ARM64), and downloaded it to my computer. I then went back to Intune and selected this file for the upload.</p>
+<p><img src="../Intune-Lab/attachments/4.-Installing-Apps-3.png" width="auto" height="auto" alt/></p>
+<blockquote>
+<p>Keep in mind I only chose ARM due to the VM used for testing. In another environment you would want to consider the architecture and OS requirements for your app/device compatibility.</p>
+</blockquote>
+<p>Luckily for me the Intune LOB App Wizard pre-populated a lot of the information to set up the app including the Name and Description. It labeled it as (ARM64) so if I needed to also provision the AMD64 version it would be easy to tell them apart.</p>
+<p>For the Command-line arguments section I added the following:</p>
+<pre><code>/qn /norestart
+</code></pre>
+<p>This will prevent the device from restarting after the Zoom install is complete.</p>
+<p>I also needed to set the App install context to <code>Device</code> so that it automatically installs it during OOBE setup. If you keep it as the default <code>User</code> it will only install it after the user logs in, and it is only available for that user on the machine. I found it made more sense to keep it device-wide.</p>
+<p>On the Assignments page I chose the <code>All-Windows-11</code> group to receive this install. This is where I could consider separating app availability by group membership but for now I will allow it on all Windows 11 devices.</p>
+<p><img src="../Intune-Lab/attachments/4.-Installing-Apps-4.png" width="auto" height="auto" alt/></p>
+<h1 id="win32-app---google-chrome">Win32 App - Google Chrome<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#win32-app---google-chrome" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>If the app developer does not provide an MSI version of the installer and you are forced to use an EXE or some form of script, you can wrap it in a Win32 App to make it usable within Intune. This can be done by using Microsoft’s <a href="https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool" class="external" target="_blank">Content-Prep-Tool<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> which is a Windows only tool for creating Win32 Apps.</p>
+<p>Since I had to use Windows, I downloaded the tool on my Windows machine, calling the file “Win32Prep” and created the following file structure:</p>
+<pre><code>C:/
+├─ Source/
+│  ├─ Chrome/
+│  │  ├─ ChromeSetup.exe
+├─ Tools/
+│  ├─ Win32Prep/
+│  │  ├─ IntuneWinAppUtil.exe
+├─ Output/
+</code></pre>
+<p>I then used the following command in a Windows machine to turn the Google Chrome:</p>
+<pre><code>C:\Tools\Win32Prep\IntuneWinAppUtil.exe `
+  -c &quot;C:\Source\Chrome&quot; `
+  -s &quot;ChromeSetup.exe&quot; `
+  -o &quot;C:\Output&quot;
+</code></pre>
+<p>Once this process completes you should see a <code>ChromeSetup.intunewin</code> file in the Win32Oput folder. Next is uploading this to Intune and creating an App for it.</p>
+<p>Back in Intune I went to <code>Intune > Apps > All Apps > Create > App Type > Windows app (Win32)</code> and when it asked for the file I gave it the .intunewin I just made. I gave it the name Google Chrome (ARM64) to be consistent with the Zoom App.</p>
+<p>I then entered the following settings:</p>
+<ul>
+<li><strong>Install command</strong>: <code>ChromeSetup.exe /silent /install</code></li>
+<li><strong>Uninstall command</strong>: <code>&quot;%ProgramFiles%\Google\Chrome\Application\chrome.exe&quot; --uninstall --system-level --force-uninstall</code></li>
+<li><strong>Allow available uninstall</strong>: No</li>
+<li><strong>Install Behavior</strong>: System</li>
+<li><strong>Device restart behavior</strong>: No specific action</li>
+</ul>
+<p>This will make sure Chrome installs for all users, the users are not allowed to uninstall the app, and the app will not restart the device after installation.</p>
+<p>On the Requirements page I selected the following:</p>
+<ul>
+<li><strong>Check operating system architecture</strong>: Yes - Install on ARM64 system</li>
+<li><strong>Minimum operating system</strong>: Windows 11 21H2</li>
+</ul>
+<p>This ensures this app can only install on ARM64 devices with any version of Windows 11. Since this is a fairly small app install I did not make any hardware requirements.</p>
+<p>Detection Rule settings:</p>
+<ul>
+<li><strong>Rule type</strong>: File</li>
+<li><strong>Path</strong>: C:\Program Files\Google\Chrome\</li>
+<li><strong>File or folder</strong>: chrome.exe</li>
+<li><strong>Detection Method</strong>: File or folder exists</li>
+</ul>
+<p>For Assignments I selected this app be required for the All-Windows-11 group to be available for all Windows-11 users.</p>
+<p>With all of that in place I hit Create and let Intune build the app for me and everything seemed good to go.</p>
+<h1 id="microsoft-store-app---globalprotect-vpn">Microsoft Store app - GlobalProtect VPN<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#microsoft-store-app---globalprotect-vpn" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>To create a Microsoft Store app you just need to go to <code>Intune > Apps > All Apps > Create > App type > Microsoft Store app (new)</code> and searched for “GlobalProtect” in the search bar.</p>
+<p><img src="../Intune-Lab/attachments/4.-Installing-Apps-5.png" width="auto" height="auto" alt/></p>
+<p>When I selected this it auto-populated most of the information for me in the App Information settings. I did however change the Install behavior to <code>system</code> to ensure this would apply to all users on the device.</p>
+<p>On the next page I assigned this to be required for the All-Windows-11 group then hit Create to let Intune build this for me.</p>
+<h1 id="microsoft-365-apps-for-windows-11">Microsoft 365 Apps for Windows 11<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#microsoft-365-apps-for-windows-11" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Microsoft Office 365 Apps are another install that will often be requested in corporate enterprise environments. Microsoft makes it easy to install this by offering the Office 365 installer as a built in option in the Intune Apps Create menu. Just go to <code>Intune > Apps > All Apps > Create > App Type > Microsoft 365 Apps > Windows 10 and later</code> to start the creation wizard.</p>
+<p>For the App Setup Information I kept the defaults, feel free to tweak as needed. On the Configure App Suite page I made the following changes:</p>
+<ul>
+<li><strong>Select Office Apps</strong>:
+<ul>
+<li>Excel</li>
+<li>Outlook</li>
+<li>PowerPoint</li>
+<li>Teams</li>
+<li>Word</li>
+</ul>
+</li>
+<li><strong>Architecture</strong>: 64-bit</li>
+<li><strong>Default file format</strong>: Office Open XML Format</li>
+<li><strong>Update Channel</strong>: Monthly Enterprise</li>
+<li><strong>Remove Other Versions</strong>: Yes</li>
+<li><strong>Use shared computer activation</strong>: Yes</li>
+</ul>
+<p>On the assignments page I set the install to run for all devices in the All-Windows-11 group and clicked Create so Intune could start building the app.</p>
+<h1 id="testing">Testing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#testing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>After all the apps were set up in the portal I restarted my VM OOBE snapshot to start fresh. I let it run for a few minutes and saw the Enrollment Status Page say Installed Apps: 4 out of 4. I was then taken to the device desktop where I confirmed all apps installed.</p>
+<p><img src="../Intune-Lab/attachments/4.-Installing-Apps-6.png" width="auto" height="auto" alt/></p>
+<p>You can also confirm the apps were installed from the Intune portal by going to  <code>Intune > Devices > Windows > [Device Name] > Managed Apps</code>.</p>
+<p><img src="../Intune-Lab/attachments/4.-Installing-Apps-7.png" width="auto" height="auto" alt/></p>
+<h1 id="bonus-vmware-tools-win32-app">Bonus: VMware Tools (Win32 App)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bonus-vmware-tools-win32-app" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>I decided it would be easier on me if I could have my test devices automatically install VMware Tools. Since the installer only comes in the form of an EXE I had to do it as a Win32 App.</p>
+<p>First I needed to get the EXE file and create the wrapper file. I found the file <code>setup.exe</code> by finding the ARM version of the <code>windows.iso</code> and mounting it to my system and looking inside. The method of doing this will be different depending on your version of VMware and the OS of your hypervisor host.</p>
+<p>Once you have the EXE you can perform a similar step as above with Chrome:</p>
+<pre><code>C:\Tools\Win32Prep\IntuneWinAppUtil.exe `
+  -c &quot;C:\Source\VMwareTools&quot; `
+  -s &quot;setup.exe&quot; `
+  -o &quot;C:\Output&quot;
+</code></pre>
+<p>This created a file called <code>setup.intunewin</code> which I could then upload to Intune.</p>
+<p>Before I did that I needed to create a new dynamic group that only applies to VMware VMs. I created one in Entra using the following dynamic rule and called it <code>All-VMware</code></p>
+<pre><code>(device.deviceModel -contains &quot;VMware&quot;) 
+     or (device.deviceManufacturer -contains &quot;VMware&quot;)
+</code></pre>
+<p>For the Win32 App I used the following settings:</p>
+<ul>
+<li><strong>Name</strong>: VMwareTools (ARM64)</li>
+<li><strong>Description</strong>: VMwareTools (ARM64)</li>
+<li><strong>Publisher</strong>: VMware</li>
+<li><strong>Install Command</strong>: setup.exe /S /v “/qn REBOOT=R ADDLOCAL=ALL”</li>
+<li><strong>Uninstall Command</strong>: setup.exe /S /v “/qn REMOVE=ALL REBOOT=R”</li>
+<li><strong>Allow available uninstall</strong>: No</li>
+<li><strong>Install Behavior</strong>: System</li>
+<li><strong>Device restart behavior</strong>: App install may force a device restart</li>
+<li><strong>Minimum Operation System</strong>: Windows 11 21H2</li>
+<li><strong>Detection Rule</strong>:
+<ul>
+<li><strong>Rule Type</strong>: File</li>
+<li><strong>Path</strong>: C:\Program Files\VMware\VMware Tools\</li>
+<li><strong>File or folder</strong>: vmtoolsd.exe</li>
+<li><strong>Detection method</strong>: File or folder exists</li>
+<li><strong>Associated with a 32-bit app on 64-bit clients</strong>: Yes</li>
+</ul>
+</li>
+<li><strong>Assignment</strong>: All-VMware</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" id="toc" class aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content" class><ul class="overflow"><li class="depth-0"><a href="#installation-methods" data-for="installation-methods">Installation Methods</a></li><li class="depth-0"><a href="#line-of-business-lob---zoom-workplace" data-for="line-of-business-lob---zoom-workplace">Line-of-business (LOB) - Zoom Workplace</a></li><li class="depth-0"><a href="#win32-app---google-chrome" data-for="win32-app---google-chrome">Win32 App - Google Chrome</a></li><li class="depth-0"><a href="#microsoft-store-app---globalprotect-vpn" data-for="microsoft-store-app---globalprotect-vpn">Microsoft Store app - GlobalProtect VPN</a></li><li class="depth-0"><a href="#microsoft-365-apps-for-windows-11" data-for="microsoft-365-apps-for-windows-11">Microsoft 365 Apps for Windows 11</a></li><li class="depth-0"><a href="#testing" data-for="testing">Testing</a></li><li class="depth-0"><a href="#bonus-vmware-tools-win32-app" data-for="bonus-vmware-tools-win32-app">Bonus: VMware Tools (Win32 App)</a></li></ul></div></div><div class="recent-notes desktop-only"><h3>Recent Notes</h3><ul class="recent-ul"><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../Intune-Lab/6.-Securing-Devices" class="internal">6. Securing Devices</a></h3></div><p class="meta">Sep 26, 2025</p><ul class="tags"></ul></div></li><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../Intune-Lab/5.-Creating-Update-Rings" class="internal">5. Creating Update Rings</a></h3></div><p class="meta">Sep 26, 2025</p><ul class="tags"></ul></div></li><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../" class="internal">🏡 Home</a></h3></div><p class="meta">Sep 26, 2025</p><ul class="tags"></ul></div></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul class="overflow"><li><a href="../" class="internal">🏡 Home</a></li></ul></div></div><footer class><ul><li><a href="https://github.com/mbusbee505">GitHub</a></li><li><a href="mailto:busbeetech@gmail.com">Email</a></li><li><a href="https://x.com/mbusbee505">Twitter</a></li></ul></footer></div></div></body><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

@@ -73,6 +73,13 @@ jobs:
           ls -la public/
         working-directory: ./source
 
+      - name: Ensure favicon is deployed
+        run: |
+          cp static/favicon.ico public/static/favicon.ico || echo "favicon.ico not found, skipping"
+          echo "Contents of public/static:"
+          ls -la public/static/
+        working-directory: ./source
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 

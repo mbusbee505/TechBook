@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>1. Setting Up The Lab</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains Mono&amp;family=JetBrains Mono:wght@400;700&amp;family=JetBrains Mono:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="1. Setting Up The Lab"/><meta property="og:description" content="Signing Up for Intune First things first, I had to sign up for the Intune Free Trial, provided an email address and a few other pieces of info. The trial allows for 25 users but we get all the same features as the paid version of the environment."/><meta property="og:image" content="https://busbeetech.com/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/favicon.ico"/><link rel="shortcut icon" href="../static/favicon.ico"/><meta name="description" content="Signing Up for Intune First things first, I had to sign up for the Intune Free Trial, provided an email address and a few other pieces of info. The trial allows for 25 users but we get all the same features as the paid version of the environment."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="Intune-Lab/1.-Setting-Up-The-Lab"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">BusbeeTech 🐝</a></h2><div class="spacer mobile-only"></div><div class="search"><button class="search-button" id="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><button class="darkmode" id="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;Intune-Lab&quot;,&quot;collapsed&quot;:true}]" aria-controls="explorer-content" aria-expanded="false"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Intune-Lab"><button class="folder-button"><span class="folder-title">Intune Lab</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Intune-Lab"><li><a href="../Intune-Lab/0.-Project-Introduction" data-for="Intune-Lab/0.-Project-Introduction">0. Project Introduction</a></li><li><a href="../Intune-Lab/1.-Setting-Up-The-Lab" data-for="Intune-Lab/1.-Setting-Up-The-Lab">1. Setting Up The Lab</a></li><li><a href="../Intune-Lab/2.-Enrolling-Devices" data-for="Intune-Lab/2.-Enrolling-Devices">2. Enrolling Devices</a></li><li><a href="../Intune-Lab/3.-Polishing-OOBE" data-for="Intune-Lab/3.-Polishing-OOBE">3. Polishing OOBE</a></li><li><a href="../Intune-Lab/4.-Installing-Apps" data-for="Intune-Lab/4.-Installing-Apps">4. Installing Apps</a></li><li><a href="../Intune-Lab/5.-Creating-Update-Rings" data-for="Intune-Lab/5.-Creating-Update-Rings">5. Creating Update Rings</a></li><li><a href="../Intune-Lab/6.-Securing-Devices" data-for="Intune-Lab/6.-Securing-Devices">6. Securing Devices</a></li></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Intune-Lab/">Intune Lab</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>1. Setting Up The Lab</a></div></nav><h1 class="article-title">1. Setting Up The Lab</h1><p show-comma="true" class="content-meta"><span>Sep 19, 2025</span><span>8 min read</span></p></div></div><article class="popover-hint"><h1 id="signing-up-for-intune">Signing Up for Intune<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#signing-up-for-intune" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>First things first, I had to sign up for the <a href="https://aka.ms/IntuneTrial" class="external" target="_blank">Intune Free Trial<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, provided an email address and a few other pieces of info.</p>
+<p>The trial allows for 25 users but we get all the same features as the paid version of the environment.</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-1.png" width="auto" height="auto" alt/></p>
+<h1 id="nuke-the-security-defaults">Nuke The Security Defaults<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nuke-the-security-defaults" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Next up I needed to turn off the Entra security defaults so theres room for my conditional access policies to take effect without conflict. To do this I went to Entra > Overview > Properties > Manage security defaults and set it to <code>Disabled (not recommended)</code>.</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-2.png" width="auto" height="auto" alt/></p>
+<p>When asked for the reason, I selected “My organization plans to use Conditional Access”.</p>
+<h1 id="signing-up-for-entra-id">Signing Up for Entra ID<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#signing-up-for-entra-id" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>You will need to use <a href="https://signup.microsoft.com/get-started/signup?products=2ebf8ffa-7de1-4d14-9b15-238f5ca77671&amp;mproducts=CFQ7TTC0NZT8:0001&amp;fmproducts=CFQ7TTC0NZT8:0001&amp;ali=1" class="external" target="_blank">this page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> to sign up for Entra ID and use the same Microsoft account as you used for the Intune trial. Once this is complete you will be able to use Entra in your environment.</p>
+<p>Before you begin you may need to assign a license to your user. If this happens go to Microsoft 365 Admin Center > Billing > Licenses and ensure there is a license assigned to your user. If not, assign one manually from this page by clicking Microsoft Entra Suite > Users > Assign Licenses and choose yourself.</p>
+<p>Next we will move on to adding more users for our organization and ensure they have licenses.</p>
+<h1 id="uploading-corporate-workforce">Uploading Corporate Workforce<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uploading-corporate-workforce" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Every good organization needs at least a few users, so to make things seem more real I’m going to upload to Entra a <a href="https://raw.githubusercontent.com/mbusbee505/IntuneLab/refs/heads/main/busbeecorp_user_import.csv" class="external" target="_blank">CSV file of simulated User data<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> that makes up my fake company workforce.</p>
+<p>To get to the user upload I went to Entra > Users > Bulk Operations > Bulk Create and selected my file in the search field.</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-3.png" width="auto" height="auto" alt/></p>
+<p>If you need a fresh template for new users you can download one provided by Microsoft here as well.</p>
+<p>To see that it worked I refreshed the page and went to the All Users section.</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-4.png" width="auto" height="auto" alt/></p>
+<h1 id="setting-up-security-groups">Setting Up Security Groups<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#setting-up-security-groups" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>With Microsoft Azure you can do most things through the web portal online or using PowerShell. When you want to solve problems at scale or do something in an automated way its sometimes better to use PowerShell. I wanted a way to automate the group creation in this way so I tried with a PowerShell command.</p>
+<p>First make sure you have Microsoft Graph installed.</p>
+<pre><code>Install-Module Microsoft.Graph -Scope CurrentUser
+</code></pre>
+<p>Then connect to your tenant:</p>
+<pre><code>Connect-MgGraph -Scopes &quot;Group.ReadWrite.All&quot; -TenantID &quot;&lt;Your Tenant ID>&quot;
+</code></pre>
+<p>The Tenant ID can be found by going to Entra > Overview</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-5.png" width="auto" height="auto" alt/></p>
+<p>After running this command for the first time like I was, you may have a pop-up browser window asking for permission to connect. Make sure to give it the access so you can continue running commands.</p>
+<p>To test that the connection works run</p>
+<pre><code>Get-MgContext
+</code></pre>
+<p>It should output some info about your Tenant like below. If this doesn’t work you will need to check your connect command again and ensure you are using the right Tenant ID.</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-6.png" width="auto" height="auto" alt/></p>
+<p>Once I confirmed connection I ran the command below which added the following security groups to Entra. Since its a dynamic group, users and devices will be added to them automatically based on their properties.</p>
+<ul>
+<li>Exec</li>
+<li>HR</li>
+<li>Finance</li>
+<li>IT</li>
+<li>Sales</li>
+<li>Marketing</li>
+<li>Eng</li>
+<li>Support</li>
+<li>All-Devices</li>
+<li>All-iOS</li>
+<li>All-Android</li>
+</ul>
+<pre><code># Map each DisplayName to its dynamic rule
+$dynamicMap = @{
+    'Executive'     = '(user.jobTitle -contains &quot;Chief&quot;)'
+    'Human Resources'       = '(user.department -eq &quot;Human Resources&quot;)'
+    'Finance'  = '(user.department -eq &quot;Finance&quot;)'
+    'IT'       = '(user.department -eq &quot;IT&quot;)'
+    'Security'       = '(user.department -eq &quot;Security&quot;)'
+    'Research'       = '(user.department -eq &quot;Research&quot;)'
+    'Sales'    = '(user.department -eq &quot;Sales&quot;)'
+    'Marketing'= '(user.department -eq &quot;Marketing&quot;)'
+    'Engineering'      = '(user.department -eq &quot;Engineering&quot;)'
+    'Support'  = '(user.department -eq &quot;Support&quot;)'
+    'All-Devices' = '(device.deviceId -ne null)'      # dynamic **device** group
+    'All-iOS'     = '(device.deviceOSType -contains &quot;iOS&quot;)'
+    'All-Android' = '(device.deviceOSType -contains &quot;Android&quot;)'
+}
+
+foreach ($kv in $dynamicMap.GetEnumerator()) {
+    $name = $kv.Key
+    $rule = $kv.Value
+
+    $params = @{
+        DisplayName                 =  $name
+        MailNickname                = ($name -replace '\s','')
+        Description                 = &quot;$name dynamic security group&quot;
+        SecurityEnabled             = $true          # keeps it a security group
+        MailEnabled                 = $false
+        GroupTypes                  = @('DynamicMembership')
+        MembershipRule              = $rule
+        MembershipRuleProcessingState = 'On'
+    }
+
+    New-MgGroup @params
+}
+</code></pre>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-7.png" width="auto" height="auto" alt/></p>
+<p>Once I saw the success screen come through I went to Entra > Groups > All Groups and found the groups added via PowerShell.</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-8.png" width="auto" height="auto" alt/></p>
+<p>According to Microsoft, it can take up to 24 hours for these groups to apply to users. While I waited for this to end I moved on to setting up a dynamic device group for Windows 11 devices.</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-9.png" width="auto" height="auto" alt/></p>
+<p>In the <code>Add dynamic query</code> page I added the following settings:</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-10.png" width="auto" height="auto" alt/></p>
+<h1 id="assigning-entraintune-licenses">Assigning Entra+Intune Licenses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#assigning-entraintune-licenses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>I discovered in order to get the Automatic Enrollment to work on Intune during the OOBE setup I needed each user to have an Entra and Intune license assigned. Since I had only signed up for the Intune Trial so far, I had to go back and make sure to sign up for an Entra ID Free Trial as well under the same Microsoft account.</p>
+<p>The Free Trials for Entra and Intune both came with 25 users each so I decided to cull my workforce down to 25 users (including myself), then apply the licenses to each user. I did not want to apply to all users, just those that are employees of the company. The smartest way to do this seemed to be by creating a dynamic group based on the user’s Company Name property and assign licenses to members of that group.</p>
+<p>First I needed to set the Company Name property correctly for all 25 of my current users, since I know these are all employees. The following PowerShell commands set the Company Name for all users.</p>
+<pre><code>$CompanyName = &quot;BusbeeCorp&quot;
+$domain      = &quot;@busbeecorp.onmicrosoft.com&quot;
+
+Get-MgUser `
+    -Filter &quot;endswith(userPrincipalName,'$domain')&quot; `
+    -ConsistencyLevel eventual `
+    -All |                             
+ForEach-Object {
+    Update-MgUser -UserId $_.Id -CompanyName $CompanyName
+}
+</code></pre>
+<blockquote>
+<p>In the real world I would want to make sure data entry for each new user is happening correctly.</p>
+</blockquote>
+<p>With the Company Name set I just needed to create a dynamic group for All-Employees based on the Company Name property BusbeeCorp</p>
+<pre><code>$rule = 'user.companyName -eq &quot;BusbeeCorp&quot;'
+
+New-MgGroup -DisplayName &quot;All-Employees&quot; `
+            -Description &quot;Every Employee of BusbeeCorp&quot; `
+            -MailEnabled:$false `
+            -SecurityEnabled:$true `
+            -MailNickname &quot;all-employees&quot; `
+            -GroupTypes &quot;DynamicMembership&quot; `
+            -MembershipRule $rule `
+            -MembershipRuleProcessingState &quot;On&quot;
+</code></pre>
+<p>I found that to get the Licenses assigned to the All-Employees group I had to first update Microsoft Graph to get a few modules not included by default.The following command will install this and open a new PowerShell session.</p>
+<pre><code>Register-PSRepository -Name PSGallery -SourceLocation &quot;https://www.powershellgallery.com/api/v2&quot; -InstallationPolicy Trusted -ErrorAction SilentlyContinue
+
+Install-Module Microsoft.Graph -Scope CurrentUser -Force
+pwsh 
+</code></pre>
+<p>Once in the new session I ran the commands below to apply the License SKUs to the All-Employees group.</p>
+<pre><code>Connect-MgGraph -Scopes &quot;Directory.ReadWrite.All&quot;,&quot;LicenseAssignment.ReadWrite.All&quot;,&quot;Group.ReadWrite.All&quot;
+
+$skuIntune  = &quot;061f9ace-7d42-4136-88ac-31dc755f143f&quot;
+$skuEntraP2 = &quot;f9602137-2203-447b-9fff-41b36e08ce5d&quot;
+$groupId    = (Get-MgGroup -Filter &quot;displayName eq 'All-Employees'&quot;).Id
+
+Set-MgGroupLicense -GroupId $groupId `
+    -AddLicenses  @(@{SkuId=$skuIntune}, @{SkuId=$skuEntraP2}) `
+    -RemoveLicenses @()
+</code></pre>
+<p>I confirmed this took effect by going to Entra > Billing > Licenses > All Products and saw 25 Assigned licenses for each product.</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-11.png" width="auto" height="auto" alt/></p>
+<h1 id="signing-up-for-defender-for-endpoint">Signing Up for Defender for Endpoint<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#signing-up-for-defender-for-endpoint" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>First, Go to the sign up page for <a href="https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint" class="external" target="_blank">Microsoft Defender for Endpoint P2 Free Trial<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> and sign up using the same login you used for the rest of the lab. Complete the sign up flow, then go to <code>Microsoft 365 Admin Center > Billing > Licenses</code> page and click Microsoft Defender for Endpoint P2. In this page click <code>Groups > Assign Licenses</code> and assign them to the All-Employees group.</p>
+<p>Next we can setup Defender for Endpoint to connect with each of our devices in Intune so we can get visibility over the devices security and compliance status. Defender for Endpoint provides comprehensive protection for endpoint devices to guard users and provide better management capabilities for IT admins.</p>
+<p>To configure Defender for Endpoint you must first connect it to the Intune environment. In Intune go to <code>Intune > Endpoint security > Microsoft Defender for Endpoint</code> and set the following setting:</p>
+<ul>
+<li><strong>Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations</strong>: On</li>
+</ul>
+<p>This will let Defender control the configurations within the Intune environment.</p>
+<p>You will next need to go to the Defender portal and connect Defender to Intune on the other side. Go to <code>Defender > Settings > Endpoint > Advanced Features > Microsoft Intune Connection</code> and set it to On.</p>
+<h1 id="signing-up-for-vulnerability-management">Signing Up for Vulnerability Management<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#signing-up-for-vulnerability-management" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Next, go to <code>Defender > Trials > Defender Vulnerability Management > Begin trial</code> so you have access to the portal.</p>
+<p><img src="../Intune-Lab/attachments/1.-Setting-Up-Intune-12.png" width="auto" height="auto" alt/></p>
+<p>Microsoft warns it can take some time to set up the Defender environment after signing up for the trial so I recommend hitting the button as soon as possible when you start your lab.</p>
+<p>Once your trial has processed you should be able to see your licenses in the <code>Microsoft 365 Admin Center > Billing > Licenses</code> page and click Microsoft Defender Vulnerability Management. In this page click <code>Groups > Assign Licenses</code> and assign them to the All-Employees group.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" id="toc" class aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content" class><ul class="overflow"><li class="depth-0"><a href="#signing-up-for-intune" data-for="signing-up-for-intune">Signing Up for Intune</a></li><li class="depth-0"><a href="#nuke-the-security-defaults" data-for="nuke-the-security-defaults">Nuke The Security Defaults</a></li><li class="depth-0"><a href="#signing-up-for-entra-id" data-for="signing-up-for-entra-id">Signing Up for Entra ID</a></li><li class="depth-0"><a href="#uploading-corporate-workforce" data-for="uploading-corporate-workforce">Uploading Corporate Workforce</a></li><li class="depth-0"><a href="#setting-up-security-groups" data-for="setting-up-security-groups">Setting Up Security Groups</a></li><li class="depth-0"><a href="#assigning-entraintune-licenses" data-for="assigning-entraintune-licenses">Assigning Entra+Intune Licenses</a></li><li class="depth-0"><a href="#signing-up-for-defender-for-endpoint" data-for="signing-up-for-defender-for-endpoint">Signing Up for Defender for Endpoint</a></li><li class="depth-0"><a href="#signing-up-for-vulnerability-management" data-for="signing-up-for-vulnerability-management">Signing Up for Vulnerability Management</a></li></ul></div></div><div class="recent-notes desktop-only"><h3>Recent Notes</h3><ul class="recent-ul"><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../Intune-Lab/6.-Securing-Devices" class="internal">6. Securing Devices</a></h3></div><p class="meta">Sep 26, 2025</p><ul class="tags"></ul></div></li><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../Intune-Lab/5.-Creating-Update-Rings" class="internal">5. Creating Update Rings</a></h3></div><p class="meta">Sep 26, 2025</p><ul class="tags"></ul></div></li><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../" class="internal">🏡 Home</a></h3></div><p class="meta">Sep 26, 2025</p><ul class="tags"></ul></div></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul class="overflow"><li><a href="../" class="internal">🏡 Home</a></li></ul></div></div><footer class><ul><li><a href="https://github.com/mbusbee505">GitHub</a></li><li><a href="mailto:busbeetech@gmail.com">Email</a></li><li><a href="https://x.com/mbusbee505">Twitter</a></li></ul></footer></div></div></body><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>
