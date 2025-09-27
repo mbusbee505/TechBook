@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intune Lab/1. Setting Up Intune.md",
+                "file": "Intune Lab/1. Setting Up The Lab.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Setting Up Intune"
+              "title": "1. Setting Up The Lab"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intune Lab/1. Setting Up Intune.md",
+                "file": "Intune Lab/1. Setting Up The Lab.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 1. Setting Up Intune"
+              "title": "Backlinks for 1. Setting Up The Lab"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intune Lab/1. Setting Up Intune.md",
+                "file": "Intune Lab/1. Setting Up The Lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 1. Setting Up Intune"
+              "title": "Outgoing links from 1. Setting Up The Lab"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intune Lab/1. Setting Up Intune.md",
+                "file": "Intune Lab/1. Setting Up The Lab.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 1. Setting Up Intune"
+              "title": "Outline of 1. Setting Up The Lab"
             }
           }
         ],
@@ -188,7 +188,7 @@
   "active": "ddd7fb16f4af2a9c",
   "lastOpenFiles": [
     "Intune Lab/0. Project Introduction.md",
-    "Intune Lab/1. Setting Up Intune.md",
+    "Intune Lab/1. Setting Up The Lab.md",
     "index.md",
     "Intune Lab/6. Securing Devices.md",
     "Intune Lab/attachments/1. Setting Up Intune-12.png",

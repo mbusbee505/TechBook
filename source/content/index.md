@@ -15,7 +15,7 @@ In theory, an IT team could then ship a brand new laptop straight to a newly hir
 ## Intune Lab
 
 - ### [[0. Project Introduction]]
-- ### [[1. Setting Up Intune]]
+- ### [[1. Setting Up The Lab]]
 - ### [[2. Enrolling Devices]]
 - ### [[3. Polishing OOBE]]
 - ### [[4. Installing Apps]]
