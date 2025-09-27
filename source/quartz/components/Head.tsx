@@ -17,7 +17,6 @@ export default (() => {
     const path = url.pathname as FullSlug
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
 
-    const iconPath = joinSegments(baseDir, "static/icon.png")
     const faviconPath = joinSegments(baseDir, "static/favicon.ico")
     const ogImagePath = `https://${cfg.baseUrl}/static/og-image.png`
 
@@ -38,9 +37,8 @@ export default (() => {
         {cfg.baseUrl && <meta property="og:image" content={ogImagePath} />}
         <meta property="og:width" content="1200" />
         <meta property="og:height" content="675" />
-        <link rel="icon" href={faviconPath} sizes="any" />
-        <link rel="icon" href={iconPath} type="image/png" />
-        <link rel="apple-touch-icon" href={iconPath} />
+        <link rel="icon" href={faviconPath} />
+        <link rel="shortcut icon" href={faviconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
         {css.map((href) => (
